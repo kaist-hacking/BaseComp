@@ -1,0 +1,5 @@
+# pyvex_c
+
+This is a mirror of the directory pyvex_c in pyvex (https://github.com/angr/pyvex).
+
+Some parts are modified to enable using the MIPS16e2 Lifter.

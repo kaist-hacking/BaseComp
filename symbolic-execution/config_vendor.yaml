@@ -1,0 +1,48 @@
+Description: >
+  :analysis:              Path to vendor specific analysis file.
+  :arch:                  Architecture of vendor.
+  :base_addr:             Base address of vendor.
+  :dest_addr:             End address to reach in symbolic execution, if not needed set as -1.
+  :unconstrained:         Whether to use unconstrained symbolic execution.
+  :additional:            Name of additional arguments needed depending on the vendor specific analysis file.
+
+Samsung:
+  analysis: "./vendor/analysis_samsung.py"
+  arch: "arm"
+  base_addr: 0x40010000
+  unconstrained: False
+  sec_state_secure_value: 2
+  sec_state_insecure_value: 1
+  additional:
+    - 'sec_state'
+    - 'replay_func'
+
+MediaTek:
+  analysis: "./vendor/analysis_mediatek.py"
+  arch: "arm"
+  base_addr: 0x0
+  unconstrained: False
+  sec_state_secure_value: 1
+  sec_state_insecure_value: 2
+  additional:
+    - "get_state"
+
+MediaTek-MIPS16e2:
+  analysis: "./vendor/analysis_mediatek_mips16e2.py"
+  arch: "mips16e2"
+  base_addr: 0x90000000
+  unconstrained: False
+  sec_state_secure_value: 1
+  sec_state_insecure_value: 2
+  additional:
+    - "get_state"
+
+srsRAN:
+  analysis: "./vendor/analysis_srsran.py"
+  arch: "amd64"
+  base_addr: 0x400000
+  unconstrained: True
+  sec_state_secure_value: -1
+  sec_state_insecure_value: -1
+  additional:
+    - "get_pdu"

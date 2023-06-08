@@ -1,0 +1,205 @@
+Description: >
+  :target:                Path to target firmware.
+  :vendor:                Vendor name.
+  :integrity_func:        Address of the target integrity protection function.
+  :mac_validation_func:   Address of the MAC validating function.                 
+  :skip_funcs:            Functions that can be skipped to avoid path explosion. (Irrelevant to functionality.)
+
+  Additional arguments.
+
+G950:
+  target: "..\\artifact\\G950\\G950NKOU5DUC1_modem.bin_2_MAIN_0x20c0_0x40010000_0x24b2838"
+  vendor: "Samsung"
+  dest_addr: -1
+  integrity_func: 0x410fae89
+  mac_validation_func: 0x410fa9f4
+  skip_funcs:
+    - 0x406d6aa7
+  sec_state: 0x425565b8
+  replay_func: 0x410FAD70
+
+G955:
+  target: "..\\artifact\\G955\\G955NKOU5DUC1_modem.bin_2_MAIN_0x20c0_0x40010000_0x2543548"
+  vendor: "Samsung"
+  dest_addr: -1
+  integrity_func: 0x4117e111
+  mac_validation_func: 0x4117dc7c
+  skip_funcs:
+    - 0x40759203
+  sec_state: 0x425e6a28
+  replay_func: 0x4117DFF8
+
+G960:
+  target: "..\\artifact\\G960\\G960NKOU5FUJ1_modem.bin_2_MAIN_0x2040_0x40010000_0x240c6c0"
+  vendor: "Samsung"
+  dest_addr: -1
+  integrity_func: 0x40654253
+  mac_validation_func: 0x40653768
+  skip_funcs:
+    - 0x40da7683
+    - 0x404ce9df
+  sec_state: 0x42351504
+  replay_func: 0x40652F6A
+
+G965:
+  target: "..\\artifact\\G965\\G965NKOU5FUJ1_modem.bin_2_MAIN_0x2040_0x40010000_0x2406b40"
+  vendor: "Samsung"
+  dest_addr: -1
+  integrity_func: 0x40653833
+  mac_validation_func: 0x40652d48
+  skip_funcs:
+    - 0x404ce417
+    - 0x40da6c5b   
+  sec_state: 0x4234f834
+  replay_func: 0x4065254A
+
+G970:
+  target: "..\\artifact\\G970\\G970NKOS7FUJ1_modem.bin_2_MAIN_0x2420_0x40010000_0x2629db0"
+  vendor: "Samsung"
+  dest_addr: -1
+  integrity_func: 0x41463ea5
+  mac_validation_func: 0x414633b0
+  skip_funcs:
+    - 0x4057e5ff
+    - 0x40cd183b
+  sec_state: 0x425f0d74
+  replay_func: 0x41462BB0
+
+G975:
+  target: "..\\artifact\\G975\\G975NKOS7FUJ1_modem.bin_2_MAIN_0x2420_0x40010000_0x2666e50"
+  vendor: "Samsung"
+  dest_addr: -1
+  integrity_func: 0x41495ab9
+  mac_validation_func: 0x41494fc4
+  skip_funcs:
+    - 0x405a4c7b
+    - 0x40cfa2bb
+  sec_state: 0x42624b57
+  replay_func: 0x414947C4
+
+G977:
+  target: "..\\artifact\\G977\\G977NKOS6FUJ2_modem.bin_2_MAIN_0x2420_0x40010000_0x26760f0"
+  vendor: "Samsung"
+  dest_addr: -1
+  integrity_func: 0x4150AECD
+  mac_validation_func: 0x4150A3D6
+  skip_funcs:
+    - 0x40CECC87
+    - 0x4057F5FB
+  sec_state: 0x429B27C4
+  replay_func: 0x41509bd2
+
+G991:
+  target: "..\\artifact\\G991\\G991NKOU3BUKF_modem.bin_2_MAIN_0x3f60_0x40010000_0x3d42750"
+  vendor: "Samsung"
+  dest_addr: -1
+  integrity_func: 0x4186ba69
+  mac_validation_func: 0x4192002c
+  skip_funcs:
+    - 0x413164ed
+    - 0x41a762db
+  sec_state: 0x4633945c
+  replay_func: 0x41a3106e
+
+G996:
+  target: "..\\artifact\\G996\\G996NKOU3BULG_modem.bin_2_MAIN_0x3f60_0x40010000_0x3cfac64"
+  vendor: "Samsung"
+  dest_addr: -1
+  integrity_func: 0x4187f70d
+  mac_validation_func: 0x41936d24
+  skip_funcs:
+    - 0x4131f899
+    - 0x41a85699
+  sec_state: 0x4635109c
+  replay_func: 0x41a41844
+
+G998:
+  target: "..\\artifact\\G998\\G998NKSU3BUKG_modem.bin_2_MAIN_0x3f60_0x40010000_0x3cfa7ac"
+  vendor: "Samsung"
+  dest_addr: -1
+  integrity_func: 0x41885C13
+  mac_validation_func: 0x41941F74
+  skip_funcs:
+    - 0x413230AD
+    - 0x41A88985
+  sec_state: 0x4635545c
+  replay_func: 0x41A457C0
+
+Pro 7:
+  target: "..\\artifact\\Pro 7\\P25_flyme_pro7_md1rom.bin"
+  vendor: "MediaTek"
+  dest_addr: -1
+  integrity_func: 0x53b7e9
+  mac_validation_func: 0x53b2dc
+  skip_funcs:
+    - 0x142259
+    - 0x2cfc1
+    - 0x4f8811
+    - 0x3fab90
+  get_state: 0x4ffcb1
+
+srsue:
+  target: "..\\artifact\\srsran\\srsue"
+  vendor: "srsRAN"
+  dest_addr: 0x5459bd
+  integrity_func: 0x545580
+  mac_validation_func: 0x5758e0
+  skip_funcs:
+    - 0x54ea10
+    - 0x7eaf70
+  get_pdu: 0x4d9410
+
+A31:
+  target: "..\\artifact\\A31\\md1rom"
+  vendor: "MediaTek-MIPS16e2"
+  dest_addr: -1
+  integrity_func: 0x904802fc
+  mac_validation_func: 0x9047fe14
+  skip_funcs:
+    - 0x90de96cc # is_vsim_on
+    - 0x90289284 # dhl_trace
+    - 0x9043ca74 # emm_get_ctrl_buff
+    - 0x956a0000 # call MEMORY[]
+    - 0x90de8764 # is_test_sim
+  get_state: 0x90445154
+
+A03s:
+  target: "..\\artifact\\A03s\\md1rom"
+  vendor: "MediaTek-MIPS16e2"
+  dest_addr: -1
+  integrity_func: 0x903EAA80
+  mac_validation_func: 0x903ea598
+  skip_funcs:
+    - 0x901ef7a8 # dhl_trace
+    - 0x903A7F44 # emm_get_ctrl_buff
+    - 0x95000000 # call MEMORY[]
+    - 0x90B0165C # is_test_sim
+  get_state: 0x903B0878
+
+A145:
+  target: "..\\artifact\\A145\\md1rom"
+  vendor: "MediaTek-MIPS16e2"
+  dest_addr: -1
+  integrity_func: 0x903EF110
+  mac_validation_func: 0x903EEC28
+  skip_funcs:
+    - 0x903AC774 # emmIsVsimOn
+    - 0x901EE830 # dhl_trace
+    - 0x903AC5C0 # emm_get_ctrl_buff
+    - 0x95220000 # call MEMORY[]
+    - 0x90B0CF94 # is_test_sim
+  get_state: 0x903B4EF4
+
+A31 (Latest):
+  target: "..\\artifact\\A315\\md1rom"
+  vendor: "MediaTek-MIPS16e2"
+  dest_addr: -1
+  integrity_func: 0x90481D28
+  mac_validation_func: 0x90481840
+  skip_funcs:
+    - 0x90DEDF9C # is_vsim_on
+    - 0x902895EC # dhl_trace
+    - 0x9043E0FC # emm_get_ctrl_buff
+    - 0x956A0000 # call MEMORY[]
+    - 0x90DED034 # is_test_sim
+  get_state: 0x90446814
