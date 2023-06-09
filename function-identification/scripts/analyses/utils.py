@@ -8,8 +8,11 @@ from pgmpy.inference import BeliefPropagation
 from pgmpy.factors.discrete import DiscreteFactor
 from .cache import cache
 
+# EDIT THE FOLLOWING LINE TO CHANGE THE PROBABILITY PARMETER
+PROBABILITY_PARAMETER = 0.2
+
 MAXCALLDISTANCE = 7
-BASE_P = 0.6
+BASE_P = 1-PROBABILITY_PARAMETER
 REDUCED_P = (BASE_P-0.5)/2 + 0.5
 
 def add_factor_a(G, n, p):
