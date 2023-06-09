@@ -5,7 +5,7 @@ import sys
 import subprocess
 
 TESTS = [
-#    ["xref_graph_test.py", "xref_graph"],
+    ["call_distance_test.py", "call_distance"],
     ["cache_test.py", "hello"],
 ]
 

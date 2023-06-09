@@ -1,10 +1,14 @@
 import os
+import sys
 import time
 import shutil
 
 import idc
 
 from test_utils import get_binary, sandbox
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../scripts')))
+
 from analyses.cache import Cache
 
 cache = Cache()

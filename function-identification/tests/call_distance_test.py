@@ -1,9 +1,13 @@
 import os
+import sys
 
 import idc
 import idaapi
 
 from test_utils import get_binary, sandbox
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../scripts')))
+
 from call_distance import CallDistance
 
 def test_binary():
