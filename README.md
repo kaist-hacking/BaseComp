@@ -24,7 +24,7 @@ Specific details are instructed in the README file of each directory.
  author = {Eunsoo Kim and Min Woo Baek and CheolJun Park and Dongkwan Kim and Yongdae Kim and Insu Yun},
  booktitle = {Proceedings of the 32nd USENIX Security Symposium (Security)},
  month = {August},
- title = {{BaseComp: A Comparative Analysis for Integrity Protection in Cellular Baseband Software (to appear)}},
+ title = {{BaseComp: A Comparative Analysis for Integrity Protection in Cellular Baseband Software}},
  year = {2023}
 }
 ```
